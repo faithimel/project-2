@@ -51,7 +51,7 @@ function createHighcharts(data){
     name: "Year 2018",
     type: "lollipop",
     data: data[1],
-    color: "orange"
+    color: "blue"
     },
     {
     name: "Year 2019",
