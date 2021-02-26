@@ -48,13 +48,13 @@ function createHighcharts(data){
     ],
     series: [
     {
-    name: "Confirmed Cases",
+    name: "Year 2018",
     type: "lollipop",
     data: data[1],
-    color: "orange"
+    color: "yellow"
     },
     {
-    name: "Deaths",
+    name: "Year 2019",
     type: "lollipop",
     data: data[2],
     color: "red"
