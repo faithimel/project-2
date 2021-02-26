@@ -7,16 +7,16 @@ $(document).ready(function(){
 
 function getTableData(table) {
     const data = [],
-    state = [], 
-    positive = [],
-    death = [];
+    Category = [], 
+    Year2018 = [],
+    Year2019 = [];
     table.rows({ search: "applied" }).every(function() {
     const data = this.data();
-    state.push(data[0]);
-    positive.push(parseInt(data[3].replace(/\,/g, "")));
-    death.push(parseInt(data[5].replace(/\,/g, "")));
+    Category.push(data[0]);
+    Year2018.push(parseInt(data[1].replace(/\,/g, "")));
+    Year2019.push(parseInt(data[2].replace(/\,/g, "")));
     });
-    data.push(state, positive, death);
+    data.push(Category, Year2018, Year2019);
     return data;
     }
       
@@ -26,10 +26,10 @@ function createHighcharts(data){
     zoomType: 'xy'
     },
     title: {
-    text: "Coronavirus Outbreak in the US"
+    text: "Crime in Wichita"
     },
     subtitle: {
-    text: "Update: November 6, 2020 from covidtracking.com <br>Click and drag in the plot area to zoom in"
+    text: "Update: February 26, 2021 from the FBI <br>Click and drag in the plot area to zoom in"
     },
     xAxis: [
     {
